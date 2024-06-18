@@ -18,13 +18,36 @@
 
 /*custome styles*/
 
-header {
+/*#header {
     background-image: url('./images/dana-background-img.jpg');
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+*/
+
+#header {
+    position: relative;
 }
 
 .logo {
+    position: absolute;
     display: flex;
-    padding: 10px;
+    align-items: flex-end;
+    z-index: 2;
+
+}
+
+.navigation {
+    position: absolute;
+    z-index: 2;
+}
+
+.header-pic {
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background-size: cover;
 }
