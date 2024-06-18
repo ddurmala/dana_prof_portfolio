@@ -19,7 +19,9 @@
 /*custome styles*/
 
 header {
-    
+    background-image: url('./images/dana-background-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat
 }
 
 .logo {
