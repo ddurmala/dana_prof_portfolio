@@ -9,11 +9,24 @@
 
 /*resets*/
 
-
-
 * {
     font-family: "Protest Riot";
     color: var(--primary-color);
+    margin: 10px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
 }
 
 /*custome styles*/
@@ -29,25 +42,73 @@
 
 #header {
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-size: cover;
+    top: 50px;
 }
 
 .logo {
     position: absolute;
-    display: flex;
-    align-items: flex-end;
     z-index: 2;
-
+    bottom: 40px;
+    right: 15px;
+    color: #FDFCDC;
+    font-size: 50px;
 }
 
 .navigation {
     position: absolute;
-    z-index: 2;
+    display: block;
+    /*z-index: 2;*/
+    right: 15px;
 }
 
-.header-pic {
-    display: block;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    background-size: cover;
+ul {
+    display: flex;
+    flex-direction: row;
 }
+
+img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    top: 30px;
+}
+
+section {
+    padding: 10px;
+}
+
+#aboutme {
+    padding: 10px;
+}
+
+#mywork {
+    background-color: grey;
+    padding: 1.5em;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin: 10px;
+    background-color: #FDFCDC;
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #00AFB9;
+    display: grid;
+    text-align: center;
+}
+
+section article.mainApp {
+    grid-column: 1 / 4;
+    padding: 45px 25px;
+}
+
+.mainApp {}
