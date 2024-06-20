@@ -6,7 +6,7 @@ This project is a beginner website my my own professional portfolio.  It aims to
 
 ## Installation 
 
-website can be accessed at:
+website can be accessed at: https://ddurmala.github.io/dana_prof_portfolio/
 
 ## Usage
 
