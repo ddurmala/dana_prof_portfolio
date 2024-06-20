@@ -18,11 +18,14 @@
 html,
 body {
     height: 100%;
+    width: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding: 10px;
 }
 
 img {
@@ -53,7 +56,7 @@ img {
     position: absolute;
     z-index: 2;
     bottom: 40px;
-    right: 15px;
+    right: 30px;
     color: #FDFCDC;
     font-size: 50px;
 }
@@ -70,7 +73,7 @@ ul {
     flex-direction: row;
 }
 
-img {
+.header-pic {
     display: block;
     width: 100%;
     background-size: cover;
@@ -79,6 +82,10 @@ img {
 
 section {
     padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 #aboutme {
@@ -90,20 +97,27 @@ section {
     padding: 1.5em;
 }
 
-.apps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    margin: 10px;
-    background-color: #FDFCDC;
+.grid-header {
+    text-align: center;
+    font-size: 34px;
 }
 
-article {
-    margin: 10px;
-    padding: 10px;
-    border: 5px solid #00AFB9;
+.work-list {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex: 1;
+    gap: 10px;
+    background-color: #FDFCDC;
+
+}
+
+.work-list article {
+    border: 5px solid #00AFB9;
     text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
 }
 
 section article.mainApp {
@@ -111,4 +125,53 @@ section article.mainApp {
     padding: 45px 25px;
 }
 
-.mainApp {}
+.mainApp {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainapp-icon {
+    height: auto;
+    width: auto;
+}
+
+#contactinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width 400px) {
+    html {
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .logo {
+        font-size: 100px;
+    }
+
+    h2,
+    .grid-header {
+        font-size: 50px;
+    }
+
+    #aboutme,
+    ul {
+        font-size: 30px;
+    }
+
+    #mywork {
+        max-width: 50%;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 2000px) {
+    html {
+        width: 80%;
+    }
+}
